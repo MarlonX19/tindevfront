@@ -25,7 +25,7 @@ export default function Main({ match }) {
     }, [match.params.id]);
     https://herokutindev.herokuapp.com
     useEffect(() => {
-        const socket = io('http://herokutindev.herokuapp.com', {
+        const socket = io('https://herokutindev.herokuapp.com', {
             query: { user: match.params.id }
         });
 
