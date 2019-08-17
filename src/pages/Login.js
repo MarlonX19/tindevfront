@@ -29,7 +29,11 @@ export default function Login({ history }) {
                     value={username}
                     onChange={e => setUsername(e.target.value)}
                 />
-                <button type="submit">Entrar</button>
+                <button
+                    disabled={username.length > 0 ? false : true}
+                    style={{ backgroundColor: username.length > 0 ? '#DF4723' : 'lightgrey' }}
+                    type="submit">Entrar
+                </button>
             </form>
         </div>
     );
