@@ -26,6 +26,14 @@
     color: #999;
 }
 
+.login-container form h6{
+    margin-top: 30px;
+    font-size: 12px;
+    color: #666;
+    align-self: center;
+    font-family: sans-serif;
+}
+
 .login-container form button{
     margin-top: 10px;
     border: 0;

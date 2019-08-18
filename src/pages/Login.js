@@ -24,15 +24,17 @@ export default function Login({ history }) {
         <div className="login-container">
             <form onSubmit={handleSubmit}>
                 <img src={logo} alt="Tindev" />
+                <h6>Match with devs who share mutual interests</h6>
                 <input
-                    placeholder="Digite seu usuário do github"
+                    placeholder="Enter your github username here"
                     value={username}
                     onChange={e => setUsername(e.target.value)}
                 />
                 <button
                     disabled={username.length > 0 ? false : true}
-                    style={{ backgroundColor: username.length > 0 ? '#DF4723' : 'lightgrey' }}
-                    type="submit">Entrar
+                    style={{ backgroundColor: username.length > 0 ? '#DF4723' : 'lightgrey',
+                             cursor: username.length > 0 ? 'pointer' : 'not-allowed' }}
+                    type="submit">Log in
                 </button>
             </form>
         </div>
